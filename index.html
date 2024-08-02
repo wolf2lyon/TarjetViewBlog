@@ -2,33 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <title>Document</title>
 </head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
+  <article class="card">
+    <aside class="card__aside">
+      <figure class="card__figure">
+        <img src="./src/assets/images/illustration-article.svg" alt="Ilustración representativa de HTML y CSS" class="card__image">
+      </figure>
+    </aside>
+    <div class="card__content">
+      <div class="card__tag">Learning</div>
+      <time class="card__date" datetime="2023-12-21">Published 21 Dec 2023</time>
+      <header class="card__header">
+        <h2 class="card__title">HTML & CSS foundations</h2>
+      </header>
+      <div class="card__body">
+        <p class="card__description">
+          These languages are the backbone of every <br>website, defining structure, content, and<br> presentation.
+        </p>
+      </div>
+      <footer class="card__footer">
+        <div class="card__author">
+          <img src="./src/assets/images/image-avatar.webp" alt="Imagen del autor" class="card__author-image">
+          <span class="card__author-name">Greg Hooper</span>
+        </div>
+      </footer>
+    </div>
+  </article>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
